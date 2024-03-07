@@ -18,7 +18,7 @@
 	</header>
 
 	<main>
-    <h2>Proposition: Complaints against the NYPD are often racially motivated.</h2>
+    <h2>Proposition: Complaints against the NYPD are often ethnically motivated.</h2>
 
 		<section>
       <h3>FOR the Proposition</h3>
@@ -58,7 +58,7 @@
       <figure>
 				<img src="Resolution duration over time.png" alt="" style="width: 70%;"/>
 				<figcaption>
-          			These three line plots show the average complaint resolution times for complaints that involve officers and complainant that are of the same, different, or unknown ethnicities. These averages are plotted across time using the  year the complaint resolved as the point in time.
+          			These three line plots show the average complaint resolution times for complaints that involve officers and complainant that are of the same, different, or unknown ethnicities. These averages are plotted across time using the  year the complaint resolved as the point in time. The plots behave mostly the same which indicates that the condition of ethnicity matching or not matching does not have a significant impact motivation of complaints.
 				</figcaption>
 			</figure>
 
@@ -68,18 +68,18 @@
 			<ul>
 				<li>Design Choice: Including unknown unmatchable records as a separate plot.</li>
 				<ul>
-					<li>Score: .5</li>
-					<li>Rational:...  </li>
+					<li>Score: 0.5</li>
+					<li>Rational: Explicitly including a plot with how the unknown/unmatchable records here reinforces that the complaint resolution time is roughly the same even when we do not know the ethnicities of the parties involved. By showing all of the data it allows the viewer to relax and trust the comprehensiveness of the analysis more.  </li>
 				</ul>
 				<li>Design Choice: Phrasing the title and subtitle as a question and answer pair</li>
 				<ul>
 					<li>Score: 1.5</li>
-					<li>Rational:... </li>
+					<li>Rational: The design choice was focused on clarity. The very upfront nature of the title and subtitle also implies a very specific way to read and interpret the data. I considered using the same approach as visualization 1, but given there were 3 line graphs next to each other, I felt that the cognitive load would be too high with the False/True dichotomy and decided to guide the reader more directly. This could have an unintended impact through readers questioning why the visualization signposts are so direct. </li>
 				</ul>
 				<li>Design Choice: Using the average resolution time as the y-axis and the year closed for x-axis </li>
 				<ul>
-					<li>Score:-1 </li>
-					<li>Rational: ...</li>
+					<li>Score: -1 </li>
+					<li>Rational: The overall proposition was focused on articulating if there is an ethnically motivated aspect to complaints. This visualization uses average complaint resolution times as a proxy for ethnic motivation. When the plots end up looking the same across scenarios, it claims that ethnicity likely doesn't have a role to play in how complaints are motivated. </li>
 				</ul>
 			</ul>
     </section>
@@ -87,7 +87,8 @@
     <section>
       <h2>Final Reflection</h2>
 
-      <p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
+      <p>I found it very difficult to pick a proposition that could be supported using two separate visualizations. I decided to start creating calculated parameters/fields combining columns in interesting ways to answer questions that I thought were relevant. When I initially created the "ethnicity match" field I was hoping to make a proposition related to harassment of minorities. However, I couldn't find a proposition/visualization combination that was convincing to me. Thus, I decided to have a relatively general/vague proposition about ethnically motivated complaints. This proposition suffers from a major issue. Primarily, proving motivation from quantitative data is both difficult and likely full of bias. From there both visualizations end up arguing two different variables that could indicate motivation - count and resolution time. The resolution time was another variable that I had to calculate myself and I found interesting. The first plot was able to use a plot that was for the proposition by focusing on the share of complaints being different between scenarios where the ethnicities matched and situations where they did not match. The second visualization focused on resolution time. The implication being that there should be a difference in complaint resolution time between ethnicities if the complaints were actually ethnically motivated, but the plots are basically identical.
+	  </p>
     </section>
 	</main>
 </body>
