@@ -18,26 +18,37 @@
 	</header>
 
 	<main>
-    <h2>Proposition: [STATE PROPOSITION]</h2>
+    <h2>Proposition: Complaints against the NYPD are often racially motivated.</h2>
 
 		<section>
       <h3>FOR the Proposition</h3>
 
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="Complaint count by Ethnicity Match.png" alt="" style="width: 35%;"/>
 				<figcaption>
-					BRIEF CAPTION HERE.
+					Figure shows the percentage of complaints where the ethnicity of the complainant and officer match (True) or don't match (False). Note: Complaints where either the complainant or officer ethnicity was unavailable were excluded.
 				</figcaption>
 			</figure>
 
 			<p>
 				Design Decisions and Rationale:
 			</p>
-
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>Design Choice: Excluding complaints where ethnicity was available</li>
+				<ul>
+					<li>Score: 1</li>
+					<li>Rational: Excluding unmatchable records while in theory could fall into either bucket (true or false), there weren't enough unmatched records to change the conclusion of the graph. Mismatched ethnicities still file a significantly large portion of complaints compared to same ethnicity complaints. However, by excluding the unmatchable values the result is even more conservative making the point even more powerful.  </li>
+				</ul>
+				<li>Design Choice: Showing the percentage of the total complaints versus a count (and only using the matched records in the percentage calculations) </li>
+				<ul>
+					<li>Score: .5</li>
+					<li>Rational: There is a lot of value in sharing large shocking numbers which is what the case would be if I showed the total count instead of the percentages. The more honest approach in my eyes was to use percentages which also has the added effect of potentially curtail any suspicions about the conclusions, thus I decided to use the percentages. However, I used the total excluding unmatchable records as the denominator for the percentages. This allowed the two bars to add up to 100%, but can seem a bit dishonest since 75% of complaints were not between two parties of different ethnicities. Just 75% of the cases where we know the ethnicities. </li>
+				</ul>
+				<li>Design Choice: Sorting from largest to smallest resulting in False being first and then True</li>
+				<ul>
+					<li>Score: -0.5</li>
+					<li>Rational: The nominal baseline for a chart comparing a "True" variable and "False" one would be to have "True" first and then "False" in my mind. I think most people are tuned to have the affirmative/positive value and then the negative alternative which is flipped in this visualization. This was partially driven by wanting to show the larger bar first since the aesthetic of the visual look better to me with the larger bar first. The other driver is to try to associate the user's affirmative/positive mindset associated with the first and larger bar with the proposition. This was to avoid the confusion of associating the "False" bar with negating the proposition.</li>
+				</ul>
 			</ul>
     </section>
 
@@ -45,20 +56,31 @@
       <h3>AGAINST the Proposition</h3>
 
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="Resolution duration over time.png" alt="" style="width: 70%;"/>
 				<figcaption>
-          BRIEF CAPTION HERE.
+          			These three line plots show the average complaint resolution times for complaints that involve officers and complainant that are of the same, different, or unknown ethnicities. These averages are plotted across time using the  year the complaint resolved as the point in time.
 				</figcaption>
 			</figure>
 
 			<p>
 				Design Decisions and Rationale:
 			</p>
-
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>Design Choice: Including unknown unmatchable records as a separate plot.</li>
+				<ul>
+					<li>Score: .5</li>
+					<li>Rational:...  </li>
+				</ul>
+				<li>Design Choice: Phrasing the title and subtitle as a question and answer pair</li>
+				<ul>
+					<li>Score: 1.5</li>
+					<li>Rational:... </li>
+				</ul>
+				<li>Design Choice: Using the average resolution time as the y-axis and the year closed for x-axis </li>
+				<ul>
+					<li>Score:-1 </li>
+					<li>Rational: ...</li>
+				</ul>
 			</ul>
     </section>
 
